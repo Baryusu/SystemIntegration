@@ -3,42 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oddity Registry</title>
+    <title>New Observation | Oddity Registry</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body data-page="dashboard">
+<body data-page="new">
     <div class="noise"></div>
     <header class="topbar">
-        <a class="brand" href="index.html" aria-label="Oddity Registry home">
-            <span class="brand-mark">✳</span>
-            <span>ODDITY<br><em>REGISTRY</em></span>
-        </a>
+        <a class="brand" href="index.html" aria-label="Oddity Registry home"><span class="brand-mark">✳</span><span>ODDITY<br><em>REGISTRY</em></span></a>
         <div class="status"><span class="status-dot"></span> FIELD NODE 07 <span class="status-divider">|</span> LOCAL ONLY</div>
         <a class="top-add" href="new.html"><span>＋</span> log an oddity</a>
     </header>
-
     <div class="app-shell">
         <aside class="sidebar">
             <p class="eyebrow">Navigation / 00—04</p>
             <nav class="main-nav" aria-label="Main navigation">
-                <a href="index.html" data-nav="dashboard"><span class="nav-number">00</span><span>control room</span><span class="nav-arrow">↗</span></a>
-                <a href="archive.html" data-nav="archive"><span class="nav-number">01</span><span>oddity archive</span><span class="nav-arrow">↗</span></a>
-                <a href="new.html" data-nav="new"><span class="nav-number">02</span><span>new observation</span><span class="nav-arrow">↗</span></a>
-                <a href="settings.html" data-nav="settings"><span class="nav-number">03</span><span>registry rules</span><span class="nav-arrow">↗</span></a>
+                <a href="index.html"><span class="nav-number">00</span><span>control room</span><span class="nav-arrow">↗</span></a>
+                <a href="archive.html"><span class="nav-number">01</span><span>oddity archive</span><span class="nav-arrow">↗</span></a>
+                <a href="new.html" class="active"><span class="nav-number">02</span><span>new observation</span><span class="nav-arrow">↗</span></a>
+                <a href="settings.html"><span class="nav-number">03</span><span>registry rules</span><span class="nav-arrow">↗</span></a>
             </nav>
-            <div class="sidebar-note">
-                <span class="stamp">FOR YOUR EYES<br>AND OTHER ORGANS</span>
-                <p>Every strange thing deserves a place to be properly documented.</p>
-            </div>
+            <div class="sidebar-note"><span class="stamp">FOR YOUR EYES<br>AND OTHER ORGANS</span><p>Every strange thing deserves a place to be properly documented.</p></div>
             <div class="orbit orbit-small"></div>
         </aside>
-
         <main id="app" class="content" aria-live="polite"></main>
     </div>
-
     <div id="toast" class="toast" role="status"></div>
     <script src="app.js"></script>
 </body>
